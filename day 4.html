@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 4 task</title>
+</head>
+<body>
+    
+    <script>
+
+//Q1. How to compare the two JSON having same properties without order
+
+let obj1= {name: "person1", age:5}
+let obj2= {name: "person1", age:5}
+
+console.log(JSON.stringify(obj1)===JSON.stringify(obj2));
+
+
+//Q2.Use the rest countries API url print all countries flag
+
+var request = new XMLHttpRequest();
+
+request.open("GET", "https://restcountries.com/v3.1/all");
+
+request.send();
+
+request.onload = function() {
+    var data=JSON.parse(request.response)
+    for (let i=0; i<=data.length; i++){
+        console.log(data[i].flags);
+    }
+   
+}
+    
+
+//Q3.Print all countries name, region, sub-region, papulation
+
+var request2 = new XMLHttpRequest();
+
+request2.open("GET", "https://restcountries.com/v3.1/all");
+
+request2.send();
+
+request2.onload = function() {
+    var data2 = JSON.parse(request2.response);
+    for(let j=0; j<=data2.length; j++){
+        console.log(data2[j].name.common)
+        console.log(data2[j].region)
+        console.log(data2[j].subregion)
+        console.log(data2[j].population)
+    }
+}
+
+    </script>
+</body>
+</html>
