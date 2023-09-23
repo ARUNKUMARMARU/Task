@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 14- HTML form</title>
+</head>
+<body >
+<h2 style="padding-left:100px;">HTML form</h2>
+<form id="dataform">
+    <div>
+        <label for="firstname">Firstname</label> <input type="text" placeholder="firstname here" id="firstname" name="firstname" required>
+        <label for="flasttname">Lastname</label> <input type="text" placeholder="lastname here" id="lastname" name="lastname" required>
+    <br> <br>
+    
+    
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required> 
+        <br><br>
+        <label >Pincode</label>
+        <input type="text" id="Pincode" name="Pincode">
+        <br><br>
+        
+    <label for="gender" id="gender"> Gender
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        </label>
+        <br> <br>
+    
+        <label for="" id="food">Choise of food</label>
+        <br><input type="checkbox"><label for="food1">Food1</label>
+        <br><input type="checkbox"><label for="food2">Food2</label>
+        <br><input type="checkbox"><label for="food3">Food3</label>
+        <br><input type="checkbox"><label for="food4">Food4</label>
+        <br><input type="checkbox"><label for="food5">Food5</label>
+        <br><br>
+    
+        <label for="country">Country</label>
+        <select name="" id="country">
+            <option>--Select--</option>
+            <option value="Bharat">Bharat</option>
+            <option value="Bharat">Russia</option>
+            <option value="Bharat">USA</option>
+            <option value="Bharat">Sri lanka</option>
+        </select><br><br>
+    
+        <label for="">State</label>
+        <select name="" id="state">
+            <option value="">--Select--</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Jammu">Jammu</option>
+            <option value="Gujarath">Gujarath</option>
+        </select><br> <br>
+        <input type="submit" value="submit"> <br><br>
+</form>  
+
+
+    <table border="1" style="border-collapse: collapse;" cellpadding="10" id="datatable">
+        <thead>
+            <tr><th>Firstname</th>
+                <th>Lastname</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Choise of food</th>
+                <th>Country</th>
+                <th>State</th></tr>
+        </thead>
+<tbody>
+   
+</tbody>
+    </table>
+    <script src="./form.js"></script>
+</body>
+</html>
